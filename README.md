@@ -130,6 +130,16 @@ Below are examples of how customer names were standardized:
 | Helly Hansen  | Helly Hensen      |
 | New Athletic  | Newathletic       |
 | Super Exito   | Superexito        |
+<img width="462" alt="Screenshot 2025-05-16 at 10 33 14" src="https://github.com/user-attachments/assets/0bc35719-45be-4260-bfc0-0d102a63775e" />
+
+<img width="562" alt="Screenshot 2025-05-16 at 10 34 39" src="https://github.com/user-attachments/assets/66da3c01-d494-43c9-9668-844e5cacaf0e" />
+
+<img width="560" alt="Screenshot 2025-05-16 at 10 35 13" src="https://github.com/user-attachments/assets/89e0347b-5c96-4825-be0d-1fc895846c83" />
+
+<img width="771" alt="Screenshot 2025-05-16 at 10 35 50" src="https://github.com/user-attachments/assets/d5ee218f-559a-412f-ba9c-e523750c5fdb" />
+
+
+
 
 ## Learning and Future Improvements
 

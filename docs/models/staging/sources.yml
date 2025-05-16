@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: slack_zendesk
+    database: mind-guard-calendar-dev  # This would be your project ID
+    schema: slack_zendesk_hbk          # This is your dataset
+    description: >
+      Raw data from Slack and Zendesk systems containing
+      customer communications and organization information
+    tables:
+      - name: slack_channel
+        description: >
+          Slack channel data with information about channel names and types.
+          Channel naming conventions encode customer information.
+        columns:
+          - name: id
+            description: Unique identifier for the Slack channel
+          - name: name
+            description: Channel name, often following pattern like 'mutual-client-{customer name}'
+
+      - name: zendesk_organization
+        description: >
+          Zendesk organization data containing information about customer organizations.
+        columns:
+          - name: id
+            description: Unique identifier for the Zendesk organization
+          - name: name
+            description: Organization name as recorded in Zendesk

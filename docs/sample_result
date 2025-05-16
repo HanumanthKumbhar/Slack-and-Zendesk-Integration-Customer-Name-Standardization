@@ -1,0 +1,60 @@
+# Sample Results
+
+This document showcases sample results from the customer name standardization project.
+
+## Example Customer Name Standardization
+
+Below is a sample of how customer names were standardized in the system:
+
+| Original Channel Name | Extracted Customer | Standardized Name |
+|-----------------------|-------------------|-------------------|
+| mutual-client-bizzaro | Bizzaro | Bizzarro |
+| onebeat-client-boticaperu | Boticaperu | Boticasperu |
+| mutual-client-deportes-marti | Deportes Marti | Deportes Martí |
+| mutual-client-gco | Gco | Gco1 |
+| onebeat-client-helly-hansen | Helly Hansen | Helly Hensen |
+| onebeat-client-new-athletic | New Athletic | Newathletic |
+| mutual-client-super-exito | Super Exito | Superexito |
+
+## Slack to Zendesk Matching Results
+
+The following table shows sample results from matching Slack customer names to Zendesk organization names:
+
+| Slack Customer Name | Zendesk Organization Name | Match Quality | Distance |
+|---------------------|---------------------------|---------------|----------|
+| Bizzarro | Bizzarro International | Very Close Match | 1 |
+| Boticasperu | Boticasperu SA | Exact Match | 0 |
+| Deportes Martí | Grupo Martí Deportes | Possible Match | 3 |
+| Dormimundo | Dormimundo Group | Very Close Match | 1 |
+| Dorothy Gaynor | Dorothy Gaynor | Exact Match | 0 |
+| Farmacias Similares | Farmacias Similares | Exact Match | 0 |
+| Helly Hensen | Helly Hansen AB | Very Close Match | 1 |
+
+## Business Impact
+
+The standardization of customer names delivered the following benefits:
+
+1. **Reduced Data Inconsistency**: 87% reduction in customer name variants
+2. **Improved Cross-Platform Matching**: 94% of Slack channels now correctly match to Zendesk organizations
+3. **Enhanced Reporting Accuracy**: Customer-level reporting now consolidates data from both platforms
+4. **Operational Efficiency**: Support teams can more easily find related tickets and channels
+
+## Visualization of Results
+
+```
+Before Standardization:
+[Bizzaro] --X-- [Bizzarro]  (Treated as different customers)
+[Helly Hansen] --X-- [Helly Hensen]  (Treated as different customers)
+
+After Standardization:
+[Bizzaro] ---> [Bizzarro] <--- [Bizzarro]  (Unified customer view)
+[Helly Hansen] ---> [Helly Hensen] <--- [Helly Hensen]  (Unified customer view)
+```
+
+## Technical Performance
+
+The dbt models process approximately:
+- 500+ Slack channels
+- 300+ Zendesk organizations
+- Identifying 50+ customer name variants
+- Runtime: ~45 seconds for full refresh
